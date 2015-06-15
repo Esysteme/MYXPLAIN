@@ -1,0 +1,47 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT t1.id FROM t1 INNER JOIN (SELECT id FROM t2) d ON t1.id=d.id;",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "PRIMARY",
+				"table" : "t1",
+				"type" : "index",
+				"possible_keys" : "PRIMARY",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "(null)",
+				"rows" : "50",
+				"filtered" : "100",
+				"extra" : "Using index"
+			},
+			{ 
+				"id" : "1",
+				"select_type" : "PRIMARY",
+				"table" : "&#60;derived2&#62;",
+				"type" : "index",
+				"possible_keys" : "(null)",
+				"key" : "(null)",
+				"key_len" : "(null)",
+				"ref" : "(null)",
+				"rows" : "50",
+				"filtered" : "100",
+				"extra" : "Using where; Using join buffer"
+			},
+			{ 
+				"id" : "2",
+				"select_type" : "DERIVED",
+				"table" : "t2",
+				"type" : "index",
+				"possible_keys" : "(null)",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "(null)",
+				"rows" : "50",
+				"filtered" : "100",
+				"extra" : "Using index"
+			}
+					],
+		"duration" : "0.01"
+	}
+}

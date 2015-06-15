@@ -1,0 +1,27 @@
+<div id="def_explain_extra" class="definition">
+<p>The <i>Extra</i> column provides <B>additinal informations</B> about how MySQL resolves the query</p>
+<p>It can be a concatenation of multiple informations</p>
+<p>These informations may be good news, bad news or simply informative</p>
+<p>The most common values for this colomn are the following :</p>
+<ul>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_RANGE.json", "extra");'>Using where<img src="../././includes/imgs/reload_small.png" width="15px"/></span> (neutral): Filter rows after the storage engine retrieve them. May be wrong if join type is ALL or INDEX</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_USINGINDEX.json", "extra");'>Using index<img src="../././includes/imgs/reload_small.png" width="15px"/></span> (good) : MySQL uses a covering index. The result set is retrieved from the index pages, no table read</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_USINGTEMP.json", "extra");'>Using temporary<img src="../././includes/imgs/reload_small.png" width="15px"/></span> (bad) : A temporary table is needed to achieve the query. Can be very bad if the temporary table is created on disk</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_USINGFSORT.json", "extra");'>Using filesort<img src="../././includes/imgs/reload_small.png" width="15px"/></span> (bad) : MySQL uses an extra sort rather than using an index. With GROUP BY, sorting can be avoided with <span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_GROUPBYNOSORT.json", "extra");'>ORDER BY NULL<img src="../././includes/imgs/reload_small.png" width="15px"/></span></li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain.json", "extra");'>Using join buffer<img src="../././includes/imgs/reload_small.png" width="15px"/></span> (bad) : Index needed</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_IMPOSSIBLE.json", "extra");'>Impossible WHERE<img src="../././includes/imgs/reload_small.png" width="15px"/></span> (bad) : Use valid values for your constants</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_USINGIDXGROUPBY.json", "extra");'>Using index for group-by<img src="../././includes/imgs/reload_small.png" width="15px"/></span> (good) : MySQL uses an index to process all the columns in the GROUP BY</li>
+</ul>
+
+<p>See documentation for more details about other possible values</p>
+
+<p>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/order-by-optimization.html" class="tag" target="_blank">#order_by_optimization</a> 
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/group-by-optimization.html" class="tag" target="_blank">#group_by_optimization</a>
+	<a href="http://s.petrunia.net/blog/?p=18" class="tag" target="_blank">#join_buffer</a>
+	<a href="http://www.mysqlplus.net/2011/09/26/memory-engine-change/" class="tag" target="_blank">#memory_engine</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/internal-temporary-tables.html" class="tag" target="_blank">#temporary_tables</a>
+	<a href="http://www.pythian.com/news/16249/how-and-why-tmp_table_size-and-max_heap_table_size-are-bounded" class="tag" target="_blank">#tmp_size</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en//loose-index-scan.html" class="tag" target="_blank">#loose_index_scan</a>
+</p>
+</div>

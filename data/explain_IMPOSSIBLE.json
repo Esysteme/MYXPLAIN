@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT text FROM t4 WHERE id=4 AND ts='2012-01-01';",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "(null)",
+				"type" : "(null)",
+				"possible_keys" : "(null)",
+				"key" : "(null)",
+				"key_len" : "(null)",
+				"ref" : "(null)",
+				"rows" : "(null)",
+				"filtered" : "(null)",
+				"extra" : "Impossible WHERE noticed after reading const tables"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

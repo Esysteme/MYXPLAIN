@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT id FROM t1 ORDER BY id;",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t1",
+				"type" : "INDEX",
+				"possible_keys" : "(null)",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "(null)",
+				"rows" : "50",
+				"filtered" : "100",
+				"extra" : "Using index"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

@@ -1,0 +1,111 @@
+{
+	"slides" : {
+		"slide" : [
+				{
+					"title" : "<B>MySQL Optimizer Overview</B> <br/>by Olav Sandstå (2012)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/17508358?rel=0#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>MySQL EXPLAIN Explained</B> <br/>by Dave Stokes (2012)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/13845672?rel=0#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Powerful EXPLAIN in MySQL 5.6</B> <br/>by Evgeny Potemkin (2012)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/17508513?rel=0#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Optimizing Queries with EXPLAIN</B> <br/>by Sheeri Cabral (2012)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/17508493?rel=0#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Explaining The MySQL EXPLAIN</B> <br/>by Ronald Bradford (2012)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/17508436?rel=0#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>The Power of MySQL EXPLAIN</B> <br/>by Manyi Lu (2012)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/17508475?rel=0#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Tools and Techniques for Index Design</B> <br/>by Bill Karwin (2012)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/17508536?rel=0#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>MySQL EXPLAIN Explained</B> <br/>by Adrian Hardy (2009)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/1048694#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Covering indexes</B> <br/>by Stéphane Combaudon (2008)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/17508384?rel=0#",
+					"page" : "explain"
+				},
+				{
+                                        "title" : "<B>Improving Performance with Better Indexes</B> <br/>by Ronald Bradford (2011)",
+                                        "link" : "http://fr.slideshare.net/slideshow/embed_code/17508456?rel=0#",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>Advanced Query Optimisation Techniques on Large Queries</B> <br/>by Peter Boros (2013)",
+                                        "link" : "http://fr.slideshare.net/slideshow/embed_code/17508323?rel=0#",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>How MySQL 5.6 Makes Query Optimization Easier</B> <br/>by Jaime Crespo (2013)",
+                                        "link" : "http://fr.slideshare.net/slideshow/embed_code/17508622?rel=0#",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>MySQL Indexing, Best Practices for MySQL 5.6</B> <br/>by Peter Zaitsev (2013)",
+                                        "link" : "http://www.slideshare.net/slideshow/embed_code/27839367#",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>MySQL 5.6 Performance</B> <br/>by Dimitri Kravtchuk (2013)",
+                                        "link" : "http://www.slideshare.net/slideshow/embed_code/27839644#",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>How to Design Indexes, Really</B> <br/>by Bill Karwin (2013)",
+                                        "link" : "http://www.slideshare.net/slideshow/embed_code/27839849#",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>Are You Getting the Best Of your MySQL Indexes</B> <br/>by Sheeri Cabral (2012)",
+                                        "link" : "http://www.slideshare.net/slideshow/embed_code/27840075#",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>Advanced MySQL Query and Schema Tuning</B> <br/>by Alexander Rubin (2013)",
+                                        "link" : "http://www.slideshare.net/slideshow/embed_code/39247515",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>MySQL Index Cookbook</B> <br/>by Rick James (2013)",
+                                        "link" : "http://www.slideshare.net/slideshow/embed_code/39248510",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>Advanced Query Optimizer Tuning and Analysis</B> <br/>by Sergei Petrunia and Timour Katchaounov (2013)",
+                                        "link" : "http://www.slideshare.net/slideshow/embed_code/39248846",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>Need for Speed: MySQL Indexing</B> <br/>by Oli Sennhause (2013)",
+                                        "link" : "http://www.slideshare.net/slideshow/embed_code/39249214",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>Query Optimization with MySQL 5.6: Old and New Tricks</B> <br/>by Jaime Crespo (2013)",
+                                        "link" : "http://www.slideshare.net/slideshow/embed_code/39249405",
+                                        "page" : "explain"
+                                }
+		]
+	}
+}

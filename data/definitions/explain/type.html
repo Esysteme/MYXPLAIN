@@ -1,0 +1,34 @@
+<div id="def_explain_type" class="definition">
+<p>The join type shows <B>how data is accessed</B></p>
+<p>This is an important information about the query optimization, it must be as good as possible</p>
+<p>Here are the different access methods ordered from the worst type to the best :</p>
+<ul>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_ALL.json", "type");'>ALL<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Full table scan, reading the entire content of a table</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_INDEX.json", "type");'>INDEX<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Full index scan for the join, reading the entire content of a table in the index order (Covering index is possible if <i>Using index</i> appears in <i>Extra</i> column)</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_RANGE.json", "type");'>RANGE<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Limited index scan (ex : where id in (1,3))</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_INDEX_SUBQUERY.json", "type");'>INDEX_SUBQUERY<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Index lookup on non-unique index of a subquery</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_UNIQUE_SUBQUERY.json", "type");'>UNIQUE_SUBQUERY<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Index lookup on the primary key or unique key of a subquery</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_INDEX_MERGE.json", "type");'>INDEX_MERGE<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Index scan of two merge index, use more than one index (ex : where id=10 or text1='OK')</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_REF_OR_NULL.json", "type");'>REF_OR_NULL<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Non-unique index access with an extra lookup needed for NULL values (ex : where id is null)</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_FULLTEXT.json", "type");'>FULLTEXT<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Fulltext index access</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_REF.json", "type");'>REF<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Non-unique index access aka index lookup (ex : where text1='OK')</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_EQ_REF.json", "type");'>EQ_REF<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Index lookup access that returns a single value (ex : where t1.id=t2.id)</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_CONST.json", "type");'>CONST<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Primary or unique index access turns into a constant (ex : where t1.primary_key=1)</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_SYSTEM.json", "type");'>SYSTEM<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : Applies for system tables with one row or in-memory table</li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_NULL.json", "type");'>NULL<img src="../././includes/imgs/reload_small.png" width="15px"/></span> : No access to the table or index (or impossible WHERE clause)</li>
+</ul>
+<p>Every types except <i>ALL</i> means that an index is used</p>
+<p>It is important to note that access via an index does not necessarily means a faster access to data (also be aware that too much indexes may kill performances)</p>
+<p>However a full table scan is generally not recommended (except for particular cases)</p>
+<p>Take a look at the <i>key</i>, <i>row</i> and <i>extra</i> columns for details about how data are processed</p>
+<p>
+	<a href="https://dev.mysql.com/doc/refman/5.5/en/how-to-avoid-table-scan.html" class="tag" target="_blank">#table_scan</a> 
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/join.html" class="tag" target="_blank">#join</a>
+	<a href="http://www.jonathanlevin.co.uk/2012/04/mastering-mysql-indexing.html" class="tag" target="_blank">#index</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/fulltext-search.html" class="tag" target="_blank">#fulltext</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/left-join-optimization.html" class="tag" target="_blank">#leftjoin_optimization</a>
+	<a href="http://dev.mysql.com/doc/internals/en/join-buffer-size.html" class="tag" target="_blank">#join_buffer</a>
+</p>
+
+<img src="../././includes/imgs/reload_small.png" width="15px"/> : Load a new explain plan
+</div>

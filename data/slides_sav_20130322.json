@@ -1,0 +1,61 @@
+{
+	"slides" : {
+		"slide" : [
+				{
+					"title" : "<B>MySQL Optimizer Overview</B> <br/>by Olav Sandstå (2012)",
+					"link" : "https://dl.dropbox.com/u/1089407/xplain/slides/CON9169_PDF_9169_0001.pdf",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>MySQL EXPLAIN Explained</B> <br/>by Dave Stokes (2012)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/13845672?rel=0#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Powerful EXPLAIN in MySQL 5.6</B> <br/>by Evgeny Potemkin (2012)",
+					"link" : "https://dl.dropbox.com/u/1089407/xplain/slides/Powerful_explain_MySQL_56.pdf",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Optimizing Queries with EXPLAIN</B> <br/>by Sheeri Cabral (2012)",
+					"link" : "https://dl.dropbox.com/u/1089407/xplain/slides/Optimizing_Queries_with_EXPLAIN.pdf",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Explaining The MySQL EXPLAIN</B> <br/>by Ronald Bradford (2012)",
+					"link" : "https://dl.dropbox.com/u/1089407/xplain/slides/ExplainingTheMySQLEXPLAIN.pdf",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>The Power of MySQL EXPLAIN</B> <br/>by Manyi Lu (2012)",
+					"link" : "https://dl.dropbox.com/u/1089407/xplain/slides/MySQL_Innovation_Day_MySQL_Explain.pdf",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Tools and Techniques for Index Design</B> <br/>by Bill Karwin (2012)",
+					"link" : "https://dl.dropbox.com/u/1089407/xplain/slides/WEBINAR-tools-and-techniques-for-index-design.pdf",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>MySQL EXPLAIN Explained</B> <br/>by Adrian Hardy (2009)",
+					"link" : "http://fr.slideshare.net/slideshow/embed_code/1048694#",
+					"page" : "explain"
+				},
+				{
+					"title" : "<B>Covering indexes</B> <br/>by Stéphane Combaudon (2008)",
+					"link" : "https://dl.dropbox.com/u/1089407/xplain/slides/Covering_Indexes.pdf",
+					"page" : "explain"
+				},
+				{
+                                        "title" : "<B>Improving Performance with Better Indexes</B> <br/>by Ronald Bradford (2011)",
+                                        "link" : "https://dl.dropbox.com/u/1089407/xplain/slides/ImprovingPerformanceWithBetterIndexes.pdf",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<B>Advanced Query Optimisation Techniques on Large Queries</B> <br/>by Peter Boros (2013)",
+                                        "link" : "https://dl.dropbox.com/u/1089407/xplain/slides/Advanced_query_optimization.pdf",
+                                        "page" : "explain"
+                                }
+		]
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT now();",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "(null)",
+				"type" : "(null)",
+				"possible_keys" : "(null)",
+				"key" : "(null)",
+				"key_len" : "(null)",
+				"ref" : "(null)",
+				"rows" : "(null)",
+				"filtered" : "(null)",
+				"extra" : "No tables used"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

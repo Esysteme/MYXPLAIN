@@ -1,0 +1,34 @@
+{
+	"repository" : {
+		"command_explain" : 
+		[
+			"explain.json",
+			"explain_ALL.json",
+			"explain_dependent_subquery.json",
+			"explain_dependent_union.json",
+			"explain_derived.json",	
+			"explain_INDEX.json",
+			"explain_keylen_1.json",
+			"explain_keylen_2.json",
+			"explain_RANGE.json",
+			"explain_ref.json",
+			"explain_subquery.json",
+			"explain_union.json",
+			"explain_INDEX_SUBQUERY.json",
+			"explain_UNIQUE_SUBQUERY.json",
+			"explain_INDEX_MERGE.json",
+			"explain_REF_OR_NULL.json",
+			"explain_FULLTEXT.json",
+			"explain_REF.json",
+			"explain_EQ_REF.json",
+			"explain_CONST.json",
+			"explain_SYSTEM.json",
+			"explain_NULL.json",
+			"explain_USINGINDEX.json",
+			"explain_USINGTEMP.json",
+			"explain_USINGFSORT.json",
+			"explain_IMPOSSIBLE.json",
+			"explain_USINGIDXGROUPBY.json"
+		]
+	}
+}

@@ -1,0 +1,30 @@
+<div id="def_explain_select_type" class="definition">
+<p>This column indicates if you run <B>a simple or a complex query</B></p>
+<p>This is an informative column related to the <i>id</i> column</p>
+<p>Unlike a simple query, a complex query contains subqueries or UNIONs</p>
+<p>This column displays SIMPLE when you execute a query involving one table or joins. This is the most common case</p>
+<p>For complex queries, the main SELECT will always labeled PRIMARY and the other subparts can take the following values related to the query executed :</p>
+<ul>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_subquery.json","select_type");'>SUBQUERY<img src="../././includes/imgs/reload_small.png" width="15px"/></span></li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_dependent_subquery.json","select_type");'>DEPENDENT SUBQUERY<img src="../././includes/imgs/reload_small.png" width="15px"/></span></li>
+<li>UNCACHEABLE SUBQUERY :  <i>The result must be re-evaluated for each row of the outer query</i></li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_derived.json","select_type");'>DERIVED<img src="../././includes/imgs/reload_small.png" width="15px"/></span></li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_union.json","select_type");'>UNION / UNION RESULT<img src="../././includes/imgs/reload_small.png" width="15px"/></span></li>
+<li><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_dependent_union.json","select_type");'>DEPENDENT UNION<img src="../././includes/imgs/reload_small.png" width="15px"/></span></i></li>
+<li>UNCACHEABLE UNION : <i>see UNCACHEABLE SUBQUERY</i></li>
+</ul>
+
+<p>Note that converting subqueries or derived tables to JOINs is better for performance</p>
+<p>Subqueries runs as part of <i>explain</i> execution, pay attention to this if you love your tranquility</p>
+<p>See documentation for more details about these different types</p>
+<p>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/subqueries.html" class="tag" target="_blank">#subquery</a> 
+	<a href="http://www.xaprb.com/blog/2005/09/26/sql-subqueries-and-derived-tables/" class="tag" target="_blank">#derived</a> 
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/union.html" class="tag" target="_blank">#union</a> 
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/correlated-subqueries.html" class="tag" target="_blank">#correlated_subqueries</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/explain-output.html#explain_select_type" class="tag" target="_blank">#select_type</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/rewriting-subqueries.html" class="tag" target="_blank">#subquery_as_join</a>
+</p>
+
+<img src="../././includes/imgs/reload_small.png" width="15px"/> : Load a new explain plan
+</div>

@@ -1,0 +1,14 @@
+<div id="def_explain_possible_keys" class="definition">
+<p>Which indexes could be used to perform the query, these are <B>the potential indexes</B></p>
+<p>Note that some of the indexes listed there could be useless because optimizer ignores the tables order displayed in the EXPLAIN output</p>
+<p>The <i>possible_keys</i> and <i>key</i> columns are essential in the understanding of how the optimizer works</p>
+<p>You should find one of the indexes listed there in the <i>key</i> column</p>
+<p>If this is not the case, the trouble begins... hey, it's your job!</p>
+<p>If NULL value is displayed, it is possible that an index is missing (or it means that you are looking to an UNION or a DERIVED TABLE row)</p>
+<p>Remember to take a look at the <i>where</i> clause of the query to understand the optimizer choice</p>
+<p>
+	<a href="http://mattfleming.com/node/192" class="tag" target="_blank">#B-tree-def</a> 
+	<a href="http://slady.net/java/bt/view.php" class="tag" target="_blank">#B-tree-anim</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/show-index.html" class="tag" target="_blank">#show-index</a>
+</p>
+</div>

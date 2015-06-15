@@ -1,0 +1,92 @@
+{
+	"links" : {
+		"link" : [
+				{
+					"title" : "<b>How to find MySQL queries worth optimizing ?</b></br> by Peter Zaitsev",
+					"link" : "http://www.mysqlperformanceblog.com/2012/09/11/how-to-find-mysql-queries-worth-optimizing/",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>The meaning of ref=func in MySQL EXPLAIN</b></br>by Jørgen Løland",
+					"link" : "http://jorgenloland.blogspot.fr/2011/08/meaning-of-reffunc-in-mysql-explain.html",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>EXPLAIN Output Format</b></br>by official documentation",
+					"link" : "http://dev.mysql.com/doc/refman/5.5/en/explain-output.html",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>Top 10+ SQL Performance Tips</b></br>by Keith Larson",
+					"link" : "https://wikis.oracle.com/pages/viewpage.action?pageId=27263381",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>EXPLAIN versus VISUAL EXPLAIN</b></br>by Dave Stokes",
+					"link" : "http://opensourcedba.wordpress.com/2012/11/08/explain-versus-visual-explain-part-i/",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>Top 20+ MySQL Best Practices</b></br>by Burak Guzel",
+					"link" : "http://net.tutsplus.com/tutorials/other/top-20-mysql-best-practices/",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>Join Optimizations in MySQL 5.6 and MariaDB 5.5</b></br>by Ovais Tariq",
+					"link" : "http://www.mysqlperformanceblog.com/2012/04/04/join-optimizations-in-mysql-5-6-and-mariadb-5-5/",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>MySQL Query Advisor</b></br>by Percona team",
+					"link" : "https://tools.percona.com/query-advisor",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>Find unused indexes</b></br>by Miguel Angel Nieto",
+					"link" : "http://www.mysqlperformanceblog.com/2012/06/30/find-unused-indexes/",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>Can MySQL use primary key values from a secondary index?</b></br>by Maciej Dobrzanski",
+					"link" : "http://www.dbasquare.com/2012/05/17/can-mysql-use-primary-key-values-from-a-secondary-index/",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>Filesorts, Secondary Indexes and the Importance of Covering Indexes</b></br>by Gavin Towey",
+					"link" : "http://gtowey.blogspot.fr/2012/02/filesorts-secondary-indexes-and.html",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>Analyzing I/O performance</b></br>by Maciej Dobrzanski",
+					"link" : "http://www.dbasquare.com/2012/04/18/analyzing-io-performance/",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>Full table scan vs full index scan performance</b></br>by Stephane Combaudon",
+					"link" : "http://www.mysqlperformanceblog.com/2012/11/23/full-table-scan-vs-full-index-scan-performance/",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>Looking at MySQL 5.6’s optimizer: EXPLAIN UPDATE</b></br>by Sergey Petrunia",
+					"link" : "http://s.petrunia.net/blog/?p=75",
+					"page" : "explain"
+				},
+				{
+					"title" : "<b>7 ways to convince MySQL to use the right index</b></br>by Shlomi Noach",
+					"link" : "http://code.openark.org/blog/mysql/7-ways-to-convince-mysql-to-use-the-right-index",
+					"page" : "explain"
+				},
+				{
+                                        "title" : "<b>How much overhead is caused by on disk temporary tables</b></br>by Peter Zaitsev",
+                                        "link" : "http://www.mysqlperformanceblog.com/2007/08/16/how-much-overhead-is-caused-by-on-disk-temporary-tables/",
+                                        "page" : "explain"
+                                },
+				{
+                                        "title" : "<b>Analyzing Slow Query Table in MySQL 5.6</b></br>by Bill Karwin",
+                                        "link" : "http://www.mysqlperformanceblog.com/2013/02/18/slow-query-table-in-mysql-5-6/",
+                                        "page" : "explain"
+                                }
+
+		]
+	}
+}

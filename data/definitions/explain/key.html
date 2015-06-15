@@ -1,0 +1,18 @@
+<div id="def_explain_key" class="definition">
+<p>This is <B>the key that the optimizer decided to use</B> to access to the data and minimize the query cost</p>
+<p>This is one of the most important column related to the query optimization</p>
+<p><i>possible_keys</i>, <i>key</i>, <i>key_len</i> and <i>ref</i> columns are the most essentials to understand how your data are accessed</p>
+<p>However, the key which appears here is not necessary listed in the <i>possible_keys</i></p>
+<p>But the most important is to have an index name in this column</p>
+<p>Use the <i>show index</i> command to show the indexes declared for the tables listed in the explain plan</p>
+<p>It's possible to force the optimizer to use or ignore an index with <i>hints</i></p>
+
+<p>
+	<a href="http://mattfleming.com/node/192" class="tag" target="_blank">#B-tree-def</a> 
+	<a href="http://slady.net/java/bt/view.php" class="tag" target="_blank">#B-tree-anim</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/show-index.html" class="tag" target="_blank">#show-index</a>
+	<a href="http://www.jonathanlevin.co.uk/2011/12/explaining-indexes-with-library.html" class="tag" target="_blank">#explaining_indexes</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/index-hints.html" class="tag" target="_blank">#hints</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/procedure-analyse.html" class="tag" target="_blank">#procedure_analyse</a>
+</p>
+</div>

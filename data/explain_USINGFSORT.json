@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT text1, count(id) FROM t1 GROUP BY 1;",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t1",
+				"type" : "ALL",
+				"possible_keys" : "(null)",
+				"key" : "(null)",
+				"key_len" : "(null)",
+				"ref" : "(null)",
+				"rows" : "124",
+				"filtered" : "100",
+				"extra" : "Using temporary; Using filesort"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

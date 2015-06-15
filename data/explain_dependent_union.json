@@ -1,0 +1,56 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain SELECT t1.id FROM t1 WHERE id in (SELECT id FROM t2 WHERE text2 = 'OK' UNION SELECT id FROM t3 WHERE text3 = 'OK');",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "PRIMARY",
+				"table" : "t1",
+				"type" : "index",
+				"possible_keys" : "(null)",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "(null)",
+				"rows" : "50",
+				"extra" : "Using where; Using index"
+			},
+			{ 
+				"id" : "2",
+				"select_type" : "DEPENDENT SUBQUERY",
+				"table" : "t2",
+				"type" : "eq_ref",
+				"possible_keys" : "PRIMARY",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "func",
+				"rows" : "1",
+				"extra" : "Using where"
+			},
+			{ 
+				"id" : "3",
+				"select_type" : "DEPENDENT UNION",
+				"table" : "t3",
+				"type" : "eq_ref",
+				"possible_keys" : "PRIMARY",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "func",
+				"rows" : "1",
+				"extra" : "Using where"
+			},
+			{ 
+				"id" : "(null)",
+				"select_type" : "UNION RESULT",
+				"table" : "&#60;union2,3&#62;",
+				"type" : "ALL",
+				"possible_keys" : "(null)",
+				"key" : "(null)",
+				"key_len" : "(null)",
+				"ref" : "(null)",
+				"rows" : "(null)",
+				"extra" : ""
+			}
+					],
+		"duration" : "0.01"
+	}
+}

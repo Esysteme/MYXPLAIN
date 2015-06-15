@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT id, MIN(ts) FROM t3 GROUP BY id;",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t3",
+				"type" : "range",
+				"possible_keys" : "(null)",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "(null)",
+				"rows" : "43",
+				"filtered" : "80",
+				"extra" : "Using index for group-by"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

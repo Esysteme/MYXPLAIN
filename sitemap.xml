@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<url>
+  <loc>http://www.myxplain.net</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain.php</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-id.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-select_type.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-table.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-type.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-possible_keys.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-key.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-key_len.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-ref.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-rows.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-filtered.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.myxplain.net/explain-extra.html</loc>
+  <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

@@ -1,0 +1,25 @@
+<div id="def_explain_id" class="definition">
+	<p>This is <b>the query identifier</b>, this column <B>shows the number of SELECTs</B> (This is not the identifier of a join)</p>
+	<p>Therefore, in the case of a simple SELECT query, this identifier will always be equal to 1 for each row of the EXPLAIN output</p>
+	<p>Other values are possible when using <span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_subquery.json", "id");'>subqueries<img src="../././includes/imgs/reload_small.png" width="15px"/></span>, <span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_derived.json","id");'>derived tables<img src="../././includes/imgs/reload_small.png" width="15px"/></span> or <span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_union.json", "id");'>UNION<img src="../././includes/imgs/reload_small.png" width="15px"/></span></p>
+	<p>NULL value will be displayed for the results of an UNION of two (or more) SELECTs of the EXPLAIN output</p>
+	<p>In our example, the column <i>table</i> looks like that : &lt;union1,2&gt;, where 1 and 2 are the two SELECTs of the EXPLAIN plan</p>
+	
+	<p>
+		<a href="http://dev.mysql.com/doc/refman/5.5/en/subqueries.html" class="tag" id="tag_id_subquery" target="_blank">#subquery</a> 
+		<a href="http://www.xaprb.com/blog/2005/09/26/sql-subqueries-and-derived-tables/" class="tag" id="tag_id_derived" target="_blank">#derived</a> 
+		<a href="http://dev.mysql.com/doc/refman/5.5/en/union.html" class="tag" id="tag_id_union" target="_blank">#union</a>
+	</p>
+	
+<img src="../././includes/imgs/reload_small.png" width="15px"/> : Load a new explain plan
+</div>
+
+<!-- Tooltip for Tags-->
+<script type="text/javascript">
+/*
+$('#tag_id_subquery').qtip({
+   content: 'The API option is simply a subset of the API Callbacks object. See here for full details and documentation.',
+   style: 'mystyle'
+});
+*/
+</script>

@@ -1,0 +1,19 @@
+<div id="def_explain_key_len" class="definition">
+<p>This is <B>the length of the index</B> that the optimizer decided to use</p>
+<p>This information allows you to know how many parts of a multiple-part index are used</p>
+<p>In the examples below the table <i>t3</i> has the following structure, the PRIMARY KEY has two parts (id and ts) :</p>
+<img src="includes/imgs/desc_t3.png">
+
+<p><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_keylen_1.json", "key_len");'>In this first example<img src="../././includes/imgs/reload_small.png" width="15px"/></span>, only the first part of the primary key is used, you can read a key length at 4 bytes</p>
+<p>These 4 bytes corresponds to the size of an integer type (4 bytes)</p>
+<p><span class="LoadNewDemo" onclick='LoadExplainPlan("data/explain_keylen_2.json", "key_len");'>In this second example<img src="../././includes/imgs/reload_small.png" width="15px"/></span>, the two parts of the primary key are used, you can read a key length at 8 bytes</p>
+<p>These 8 bytes corresponds to the sum of the size of an integer type and the size of a timestamp type (4 bytes + 4 bytes)</p>
+<p>Note that if the column is nullable, the key length is incremented by 1. UTF8 character set can also affect this size</p>
+
+<p>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/numeric-types.html" class="tag" target="_blank">#numeric_types</a> 
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-types.html" class="tag" target="_blank">#date_time_types</a>
+	<a href="http://www.adayinthelifeof.nl/2010/12/04/about-using-utf-8-fields-in-mysql/" class="tag" target="_blank">#utf8_fields</a>
+</p>
+<img src="../././includes/imgs/reload_small.png" width="15px"/> : Load a new explain plan
+</div>

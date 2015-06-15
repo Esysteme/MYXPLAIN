@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT * FROM mysql.user_info;",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "user_info",
+				"type" : "system",
+				"possible_keys" : "(null)",
+				"key" : "(null)",
+				"key_len" : "(null)",
+				"ref" : "(null)",
+				"rows" : "1",
+				"filtered" : "100",
+				"extra" : ""
+			}
+				],
+		"duration" : "0.01"
+	}
+}

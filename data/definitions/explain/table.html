@@ -1,0 +1,12 @@
+<div id="def_explain_table" class="definition">
+<p>This column simply displays the <B>name of the table</B> (or its alias) being accessed for the specified row</p>
+<p>For complex queries, the output of this column can be &lt;unionM,N&gt; or &lt;derivedN&gt;</p>
+<p>Take a special care while choosing your aliases, if too vague, they can disrupt the reading of your queries</p>
+<p>This column is also useful to see what was the optimizer choices about the join order :</p>
+<img src="includes/imgs/explain.png">
+<p>NULL value is also possible in the case of an impossible query or for queries with no table</p>
+<p>
+	<a href="includes/imgs/sql_joins.jpg" class="tag" target="_blank">#joins</a> 
+	<a href="http://dev.mysql.com/doc/internals/en/optimizer-code-concepts.html" class="tag" target="_blank">#optimizer</a>
+</p>
+</div>

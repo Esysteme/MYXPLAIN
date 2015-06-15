@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT text FROM t4 WHERE id IN (1,2,5) OR ts BETWWEN '2012-01-01' AND '2012-01-04';",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t4",
+				"type" : "index_merge",
+				"possible_keys" : "PRIMARY,idx1",
+				"key" : "idx1,PRIMARY",
+				"key_len" : "4,4",
+				"ref" : "(null)",
+				"rows" : "154",
+				"filtered" : "100",
+				"extra" : "Using sort_union(idx1,PRIMARY); Using where"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

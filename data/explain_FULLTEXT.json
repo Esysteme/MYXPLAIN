@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT id FROM t6 WHERE match(text) against('myftsearch');",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t6",
+				"type" : "fulltext",
+				"possible_keys" : "idx_ft",
+				"key" : "idx_ft",
+				"key_len" : "0",
+				"ref" : "",
+				"rows" : "22",
+				"filtered" : "100",
+				"extra" : "Using where"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

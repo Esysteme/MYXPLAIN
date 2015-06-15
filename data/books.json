@@ -1,0 +1,52 @@
+{
+	"books" : {
+		"book" : [
+				{
+					"id" : 0,
+					"title" : "High Performance MySQL: Optimization, Backups, and Replication",
+					"link" : "http://www.amazon.com/High-Performance-MySQL-Optimization-Replication/dp/1449314287/ref=sr_1_2?ie=UTF8&qid=1349643041&sr=8-2&keywords=mysql"
+				},
+				{
+					"id" : 1,
+					"title" : "Effective MySQL Replication Techniques in Depth",
+					"link" : "http://www.amazon.com/Effective-MySQL-Optimizing-Statements-Oracle/dp/0071782796/ref=sr_1_1?s=books&ie=UTF8&qid=1351167537&sr=1-1&keywords=Effective+MySQL"
+				},
+				{
+					"id" : 2,
+					"title" : "MySQL Troubleshooting: What To Do When Queries Don't Work",
+					"link" : "http://www.amazon.com/MySQL-Cookbook-ebook/dp/B0093SZ51E/ref=sr_1_97?s=books&ie=UTF8&qid=1349643357&sr=1-97&keywords=mysql"
+				},
+				{
+					"id" : 3,
+					"title" : "MySQL Cookbook",
+					"link" : "http://www.amazon.com/MySQL-Troubleshooting-What-When-Queries/dp/1449312004/ref=sr_1_140?s=books&ie=UTF8&qid=1349643464&sr=1-140&keywords=mysql"
+				},
+				{
+					"id" : 4,
+					"title" : "MySQL Administrator's Bible",
+					"link" : "http://www.amazon.com/MySQL-Administrators-Bible-Wiley/dp/0470416912/ref=sr_1_2?ie=UTF8&qid=1352841786&sr=8-2&keywords=mysql+bible"
+				},
+				{
+					"id" : 5,
+					"title" : "Relational Database Index Design and the Optimizers",
+					"link" : "http://www.amazon.com/Relational-Database-Index-Design-Optimizers/dp/0471719994/ref=sr_1_1?ie=UTF8&qid=1355305989&sr=8-1&keywords=relational+database+index+design+and+the+optimizers"
+				},
+				{
+					"id" : 6,
+					"title" : "SQL Tuning",
+					"link" : "http://www.amazon.com/SQL-Tuning-Dan-Tow/dp/0596005733"
+				},
+				{
+					"id" : 7,
+					"title" : "MySQL (5th Edition)",
+					"link" : "http://www.amazon.com/dp/0321833872"
+				},
+				{
+					"id" : 8,
+					"title" : "SQL Performance Explained",
+					"link" : "http://sql-performance-explained.com"
+				}
+
+		]
+	}
+}

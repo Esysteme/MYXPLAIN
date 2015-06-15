@@ -1,0 +1,18 @@
+{
+	"mysqlcommand" : {
+		"command" : "show processlist; (coming soon...)",
+		"results" : [
+			{ 
+				"id" : "0",
+				"user" : "NO DATA",
+				"host" : "NO DATA",
+				"db" : "NO DATA",
+				"command" : "NO DATA",
+				"time" : "NO DATA",
+				"state" : "NO DATA",
+				"info" : "NO DATA"
+			}
+					],
+		"duration" : "0.00"
+	}
+}

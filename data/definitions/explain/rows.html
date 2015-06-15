@@ -1,0 +1,19 @@
+<div id="def_explain_rows" class="definition">
+<p>This is <B>the estimated amount of rows</B> that the optimizer have to examine <B>to retrieve the result of the query</B></p>
+<p>This is not the number of rows of the result set</p>
+<p>Optimizer relies on statistics and the selectivity of the indexes to calculate this estimate</p>
+<p>Note that LIMIT doesn't affect this view</p>
+<p>To calculate the estimated amount of rows needed for the entire query, you have to multiply all the <i>rows</i> values</p>
+<p>Focus should be made on the difference between this estimate and the actual number of rows returned by the query</p>
+<p>If this difference is significant, it's time to analyze your where clause dude</p>
+<p><i>type</i> and <i>key</i> columns may help to diagnose a potential problem</p>
+<p>Note that run an <i>analyze table</i> command before the <i>explain</i> command may help the optimizer to estimate a more accurate number of rows</p>
+
+<p>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/optimizing-innodb.html" class="tag" target="_blank">#innodb_tuning</a> 
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/analyze-table.html" class="tag" target="_blank">#analyze_table</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/optimize-table.html" class="tag" target="_blank">#optimize_table</a>
+	<a href="http://dev.mysql.com/doc/refman/5.5/en/checksum-table.html" class="tag" target="_blank">#checksum_table</a>
+	<a href="http://www.adayinthelifeof.nl/2010/02/07/cardinality-selectivity/" class="tag" target="_blank">#cardinality_selectivity</a>
+</p>
+</div>

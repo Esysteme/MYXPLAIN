@@ -1,0 +1,34 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT text1 FROM t1 INNER JOIN t2 USING (id);",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t2",
+				"type" : "index",
+				"possible_keys" : "PRIMARY",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "NULL",
+				"rows" : "50",
+				"filtered" : "100",
+				"extra" : "Using index"
+			},
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t1",
+				"type" : "ALL",
+				"possible_keys" : "PRIMARY",
+				"key" : "NULL",
+				"key_len" : "NULL",
+				"ref" : "NULL",
+				"rows" : "50",
+				"filtered" : "80",
+				"extra" : "Using where; Using join buffer"
+			}
+					],
+		"duration" : "0.01"
+	}
+}

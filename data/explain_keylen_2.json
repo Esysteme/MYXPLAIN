@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain SELECT text FROM t3 WHERE id=2 AND ts='2012-01-02';",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t3",
+				"type" : "const",
+				"possible_keys" : "PRIMARY",
+				"key" : "PRIMARY",
+				"key_len" : "8",
+				"ref" : "const,const",
+				"rows" : "1",
+				"filtered" : "100",
+				"extra" : ""
+			}
+					],
+		"duration" : "0.01"
+	}
+}

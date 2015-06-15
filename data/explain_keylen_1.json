@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain SELECT text FROM t3 WHERE id=2;",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t3",
+				"type" : "ref",
+				"possible_keys" : "PRIMARY",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "const",
+				"rows" : "1",
+				"filtered" : "100",
+				"extra" : ""
+			}
+					],
+		"duration" : "0.01"
+	}
+}

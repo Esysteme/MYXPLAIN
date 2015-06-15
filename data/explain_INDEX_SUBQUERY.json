@@ -1,0 +1,34 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT text FROM t3 WHERE ts IN (SELECT ts FROM t4 WHERE text='test2');",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "PRIMARY",
+				"table" : "t3",
+				"type" : "ALL",
+				"possible_keys" : "(null)",
+				"key" : "(null)",
+				"key_len" : "(null)",
+				"ref" : "(null)",
+				"rows" : "50",
+				"filtered" : "100",
+				"extra" : "Using where"
+			},
+			{ 
+				"id" : "2",
+				"select_type" : "DEPENDANT SUBQUERY",
+				"table" : "t4",
+				"type" : "index_subquery",
+				"possible_keys" : "idx1",
+				"key" : "idx1",
+				"key_len" : "4",
+				"ref" : "func",
+				"rows" : "2",
+				"filtered" : "100",
+				"extra" : "Using where"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

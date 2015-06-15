@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT text1 FROM t1 WHERE id BETWEEN 2 AND 4;",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t1",
+				"type" : "range",
+				"possible_keys" : "PRIMARY",
+				"key" : "PRIMARY",
+				"key_len" : "4",
+				"ref" : "(null)",
+				"rows" : "3",
+				"filtered" : "100",
+				"extra" : "Using where"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

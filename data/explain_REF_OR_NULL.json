@@ -1,0 +1,21 @@
+{
+	"mysqlcommand" : {
+		"command" : "explain extended SELECT * FROM t4 WHERE ts='2012-01-02' OR ts is null;",
+		"results" : [
+			{ 
+				"id" : "1",
+				"select_type" : "SIMPLE",
+				"table" : "t4",
+				"type" : "ref_or_null",
+				"possible_keys" : "idx1",
+				"key" : "idx1",
+				"key_len" : "5",
+				"ref" : "const",
+				"rows" : "33",
+				"filtered" : "100",
+				"extra" : "Using where"
+			}
+				],
+		"duration" : "0.01"
+	}
+}

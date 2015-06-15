@@ -1,0 +1,46 @@
+{
+	"favlinks" : {
+		"favlink" : [
+				{
+					"title" : "<B>Official MySQL Documentation</B>",
+					"link" : "http://dev.mysql.com/doc/refman/5.5/en/"
+				},
+				{
+					"title" : "<B>MySQL Performance Blog</B> <br/>by Percona Team",
+					"link" : "http://www.mysqlperformanceblog.com/"
+				},
+				{
+					"title" : "<B>Openark Blog</B> <br/>by Shlomi Noach",
+					"link" : "http://code.openark.org/blog/"
+				},
+				{
+					"title" : "<B>MySQL Memory Allocations</B> <br/>by Rick James",
+					"link" : "http://mysql.rjweb.org/doc.php/memory"
+				},
+				{
+					"title" : "<B>Oracle's MySQL Blog</B> <br/>by Oracle Team",
+					"link" : "https://blogs.oracle.com/MySQL/"
+				},
+				{
+					"title" : "<B>dba square</B> <br/>by Maciej Dobrzanski",
+					"link" : "http://www.dbasquare.com/"
+				},
+				{
+					"title" : "<B>Xaprb blog</B> <br/>by Baron Schwartz",
+					"link" : "http://www.xaprb.com/blog/"
+				},
+				{
+					"title" : "<B>The Data Charmer</B> <br/>by Giuseppe Maxia",
+					"link" : "http://datacharmer.blogspot.in/"
+				},
+				{
+					"title" : "<B>OpenLife.cc</B> <br/>by Henrik Ingo",
+					"link" : "http://openlife.cc/blogs/hingo"
+				},
+				{
+					"title" : "<B>MySQL Optimizer Team blogs</B>",
+					"link" : "http://mysqloptimizerteam.blogspot.fr"
+				}
+		]
+	}
+}
